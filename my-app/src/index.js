@@ -14,6 +14,6 @@ Vue.use(VueApollo);
 
 new Vue({
   el: '#app',
-  apolloProvider, 
+  apolloProvider,
   render: h => h(App)
 })
