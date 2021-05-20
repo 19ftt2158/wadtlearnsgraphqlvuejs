@@ -21,10 +21,11 @@
                 ID
               </th>
             </tr>
-            <tr v-for="post in posts" :key="post.id">
+            <tr v-for="post in posts" :key="post.userId">
               <td> <img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png" alt="profile" width="100" height="100"> {{currentUser.username}} </td>
               <td> {{post.content}} </td>
-              <td> {{post.userId}} </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">{{currentUser.id}} </span> </td>
               <td> {{ post.id }} </td>
             </tr>
           </thead>
